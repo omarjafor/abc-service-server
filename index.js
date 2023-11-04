@@ -130,3 +130,7 @@ run().catch(console.dir);
 app.get('/', (req, res) => {
     res.send('Abc Service is running');
 })
+
+app.listen(port, () => {
+    console.log('Abc Services running on Port', port);
+})
